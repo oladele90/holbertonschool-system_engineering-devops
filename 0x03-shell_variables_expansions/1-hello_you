@@ -1,2 +1,2 @@
 #!/bin/bash
-if  id = "user" then  "echo hello user" 
+echo hello $user
