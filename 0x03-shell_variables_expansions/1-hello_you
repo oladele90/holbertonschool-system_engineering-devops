@@ -1,2 +1,2 @@
 #!/bin/bash
-alias [id] [name="echo hello user"]
+if  id = "user" then  "echo hello user" 
