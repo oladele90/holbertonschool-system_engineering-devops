@@ -1,0 +1,4 @@
+#!/usr/bin/evn bash
+# This school is displaying "Best School" 10 times"
+count=10
+for count
