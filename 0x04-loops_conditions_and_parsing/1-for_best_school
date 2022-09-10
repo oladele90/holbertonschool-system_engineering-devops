@@ -1,6 +1,6 @@
-#!/usr/bin/evn/bash
+#!/usr/bin/evn bash
 # This school is displaying "Best School" 10 times"
 for ((i=1 ; i<=10 ; i++))
 do 
-   echo "Best School"
+echo "Best School"
 done
