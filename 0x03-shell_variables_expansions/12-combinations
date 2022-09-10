@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%b\n" o{a..z} | grep -iv oo
+printf "%b\n" {a..z}{a..z} | grep -iv oo
