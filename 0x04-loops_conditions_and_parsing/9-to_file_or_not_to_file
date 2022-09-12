@@ -1,16 +1,18 @@
 #!/usr/bin/env bash
 # info on file
-if [ -e "$school" ];then
+file=school
+
+if [ -e "$file" ];then
     
     echo "school file exists"
     
-    if [ -s "$school" ];then
+    if [ -s "$file" ];then
        echo "school file is empty"
     else
        echo "school file is not empty"
 
     fi
-       if [ -f "$school" ];then
+       if [ -f "$file" ];then
            echo "school is a regular file"
        fi
     
