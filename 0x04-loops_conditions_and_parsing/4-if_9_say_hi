@@ -2,7 +2,7 @@
 # if 9 say hi
 i=1
 while ((i<=10));do
-      if ((i==4)
+      if ((i==9))
 	 then 
 	     echo "Hi"
 	     ((i++))
