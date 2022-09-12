@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# for ls
+file="$(ls)"
+for i in '$file';do
+    echo $i | cut -f2 -d"-"
+done
+
