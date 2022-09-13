@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# infinite loop
+i=1
+while 
