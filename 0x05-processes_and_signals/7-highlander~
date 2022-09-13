@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# They wont die!!
+i=1
+trap 
+while ((i==1)); do
+    echo "To infinity and beyond"
+    sleep 2
+done
