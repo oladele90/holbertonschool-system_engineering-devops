@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# config file
+Host 5558-web-01
+    HostName 13.38.6.183
+    User ubuntu
