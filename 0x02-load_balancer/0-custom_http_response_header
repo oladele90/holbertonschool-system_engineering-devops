@@ -13,7 +13,7 @@ sudo chmod 777 /etc/nginx/sites-available/
 sudo chmod 777 /etc/nginx/sites-available/default
 echo "Hello World" | sudo tee /var/www/html/index.html
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/custom_404.html
-sudo sed -i "27i $Header" $SRC
+sudo sed -i "27i $HEADER" $SRC
 sudo sed -i "29i $REDIR" $SRC
 sudo sed -i "47i $ERRDIR" $SRC
 sudo service nginx restart
