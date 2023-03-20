@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# install HAproxy and balance load using roundrobin
+
+SRC="/etc/haproxy/haproxy.cfg"
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install haproxy
+sudo echo -e "listen www\n\tbind:80\n\tbalance roundrobin\n\tserver 15.236.186.106\n\tserver 13.36.240.198" >> $SRC
+sudo service haproxy restart
