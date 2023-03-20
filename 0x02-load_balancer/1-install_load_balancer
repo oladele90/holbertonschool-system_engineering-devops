@@ -5,5 +5,5 @@ SRC="/etc/haproxy/haproxy.cfg"
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install haproxy
-sudo echo -e "\nlisten www\n\tbind:80\n\tbalance roundrobin\n\tserver 15.236.186.106\n\tserver 13.36.240.198" >> $SRC
+sudo echo -e "listen www\n\tbind:80\n\tbalance roundrobin\n\tserver 5558-web-01 15.236.186.106\n\tserver 5558-web-02 13.36.240.198" >> $SRC
 sudo service haproxy restart
