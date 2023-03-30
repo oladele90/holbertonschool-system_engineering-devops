@@ -29,7 +29,7 @@ def api_1():
                 completed += 1
                 break
         total += 1
-    print("Employee {} is done with tasks ({}/{}):".format(name,
+    print("Employee {} is done with tasks({}/{}):".format(name,
                                                            completed, total))
     for item in title_list:
         print("\t {}".format(item))
