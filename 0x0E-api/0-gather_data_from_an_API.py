@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """api that returns employees and tasks completed"""
-from flask import Flask
-import json
+
 import requests
 import sys
 
@@ -9,7 +8,6 @@ import sys
 def api_1():
     """api function that returns a user and tasks completed"""
 
-    api = Flask(__name__)
 
     user_api_url = ('https://jsonplaceholder.typicode.com/users/' +
                     sys.argv[1])
