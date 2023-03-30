@@ -8,7 +8,6 @@ import sys
 def api_1():
     """api function that returns a user and tasks completed"""
 
-
     user_api_url = ('https://jsonplaceholder.typicode.com/users/' +
                     sys.argv[1])
     name_response = requests.get(user_api_url)
@@ -33,7 +32,7 @@ def api_1():
     print("Employee {} is done with tasks ({}/{}):".format(name,
                                                            completed, total))
     for item in title_list:
-        print("     {}".format(item))
+        print(" \t{}".format(item))
 
 
 if __name__ == '__main__':
