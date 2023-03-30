@@ -5,8 +5,9 @@ import json
 import requests
 import sys
 
-if __name__ == '__main__':
 
+def api_1():
+    """api function that returns a user and tasks completed"""
     api = Flask(__name__)
 
     user_api_url = ('https://jsonplaceholder.typicode.com/users/' +
@@ -34,3 +35,7 @@ if __name__ == '__main__':
                                                            completed, total))
     for item in title_list:
         print("     {}".format(item))
+
+
+if __name__ == '__main__':
+    api_1()
