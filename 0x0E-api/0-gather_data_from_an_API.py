@@ -32,7 +32,7 @@ def api_1():
     print("Employee {} is done with tasks ({}/{}):".format(name,
                                                            completed, total))
     for item in title_list:
-        print(" \t{}".format(item))
+        print("\t {}".format(item))
 
 
 if __name__ == '__main__':
