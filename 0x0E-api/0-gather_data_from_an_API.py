@@ -8,6 +8,7 @@ import sys
 
 def api_1():
     """api function that returns a user and tasks completed"""
+
     api = Flask(__name__)
 
     user_api_url = ('https://jsonplaceholder.typicode.com/users/' +
