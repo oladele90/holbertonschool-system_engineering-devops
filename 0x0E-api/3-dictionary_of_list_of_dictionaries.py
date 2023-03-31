@@ -15,6 +15,7 @@ def api_1():
     u_name_list = []
     u_id_list = []
     new_dict = {}
+    x = 0
     for user in all_users:
         for key, value in user.items():
             username = user.get("username")
@@ -43,12 +44,14 @@ def api_1():
         i = 0
         write_list = []
         for i in range(total):
-            row = {"username": username, "task": title_list[i], "completed":
+            row = {"username": u_name_list[x], "task": title_list[i], "completed":
                    comp_list[i]}
             write_list.append(row)
         new_dict["{}".format(id)] = write_list
+        x += 1
     with open("todo_all_employees.json", "w") as f:
         json.dump(new_dict, f)
+    print()
 
 
 if __name__ == '__main__':
